@@ -24,6 +24,7 @@
 		C2E7346E184D72E6007CDC68 /* EveryNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E7346D184D72E6007CDC68 /* EveryNoteTests.m */; };
 		C2E73478184D73DC007CDC68 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E73477184D73DC007CDC68 /* Main_iPhone.storyboard */; };
 		C2E7347A184D7C3F007CDC68 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E73479184D7C3F007CDC68 /* Main_iPad.storyboard */; };
+		C2E7347D184D8AEA007CDC68 /* MSENBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E7347C184D8AEA007CDC68 /* MSENBrowserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		C2E7346D184D72E6007CDC68 /* EveryNoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EveryNoteTests.m; sourceTree = "<group>"; };
 		C2E73477184D73DC007CDC68 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		C2E73479184D7C3F007CDC68 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
+		C2E7347B184D8AEA007CDC68 /* MSENBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSENBrowserViewController.h; sourceTree = "<group>"; };
+		C2E7347C184D8AEA007CDC68 /* MSENBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSENBrowserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				C2E73456184D72E5007CDC68 /* EveryNote.xcdatamodeld */,
 				C2E73477184D73DC007CDC68 /* Main_iPhone.storyboard */,
 				C2E73479184D7C3F007CDC68 /* Main_iPad.storyboard */,
+				C2E7347B184D8AEA007CDC68 /* MSENBrowserViewController.h */,
+				C2E7347C184D8AEA007CDC68 /* MSENBrowserViewController.m */,
 				C2E7344B184D72E5007CDC68 /* Supporting Files */,
 			);
 			path = EveryNote;
@@ -257,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2E7347D184D8AEA007CDC68 /* MSENBrowserViewController.m in Sources */,
 				C2E73451184D72E5007CDC68 /* main.m in Sources */,
 				C2E73458184D72E5007CDC68 /* EveryNote.xcdatamodeld in Sources */,
 				C2E73455184D72E5007CDC68 /* MSENAppDelegate.m in Sources */,
@@ -383,6 +389,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EveryNote/EveryNote-Prefix.pch";
 				INFOPLIST_FILE = "EveryNote/EveryNote-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -396,6 +403,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EveryNote/EveryNote-Prefix.pch";
 				INFOPLIST_FILE = "EveryNote/EveryNote-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Browser View Controller-->
         <scene sceneID="Hbb-cC-9i1">
             <objects>
-                <viewController id="YtN-30-JhI" sceneMemberID="viewController">
+                <viewController id="YtN-30-JhI" customClass="MSENBrowserViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="huz-eY-BA9"/>
                         <viewControllerLayoutGuide type="bottom" id="4ng-dj-FVy"/>
@@ -33,6 +33,9 @@
                                 <state key="normal" title="Go">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="browseTo:" destination="YtN-30-JhI" eventType="touchUpInside" id="V49-Hv-qaV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,6 +49,10 @@
                             <constraint firstAttribute="trailing" secondItem="7c5-kW-hdd" secondAttribute="trailing" constant="8" id="u9S-Cr-yJX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="urlField" destination="dng-Mr-tBd" id="9Tz-GV-evA"/>
+                        <outlet property="webView" destination="2BR-QC-SWE" id="E3Z-4Z-2e8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y2A-PR-gIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
