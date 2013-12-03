@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Browser View Controller-->
         <scene sceneID="BPV-rv-6by">
             <objects>
-                <viewController id="H7l-aa-4kA" sceneMemberID="viewController">
+                <viewController id="H7l-aa-4kA" customClass="MSENBrowserViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jn7-Va-a5D"/>
                         <viewControllerLayoutGuide type="bottom" id="xZH-iJ-uI1"/>
@@ -28,6 +28,9 @@
                                 <state key="normal" title="Go">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="browseTo:" destination="H7l-aa-4kA" eventType="touchUpInside" id="7f9-ef-xh0"/>
+                                </connections>
                             </button>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJ0-ZD-D5N">
                                 <rect key="frame" x="0.0" y="68" width="768" height="956"/>
@@ -46,6 +49,10 @@
                             <constraint firstItem="0Gz-O1-Gbb" firstAttribute="leading" secondItem="glf-iN-MI0" secondAttribute="leading" constant="20" id="too-d5-rh8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="urlField" destination="0Gz-O1-Gbb" id="Hdc-gz-Wy6"/>
+                        <outlet property="webView" destination="VJ0-ZD-D5N" id="kAQ-SX-eH6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPO-6G-cZb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
