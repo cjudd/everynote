@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@class MSENAddNoteViewController;
+
+@protocol AddNoteDelegate
+
+-(void) savedNote:(MSENAddNoteViewController*) controller;
+
+@end
+
 @interface MSENAddNoteViewController : UITableViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
-
+@property (weak, nonatomic) id <AddNoteDelegate> delegate;
 
 @end

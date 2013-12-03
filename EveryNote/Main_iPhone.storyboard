@@ -93,7 +93,7 @@
                     <navigationItem key="navigationItem" title="Notes" id="kBI-WX-MUj">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ytN-ME-0KV">
                             <connections>
-                                <segue destination="0WS-ri-mTY" kind="push" id="GhD-Ds-ktf"/>
+                                <segue destination="0WS-ri-mTY" kind="push" identifier="Add Note Segue" id="GhD-Ds-ktf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -138,7 +138,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Note" id="azc-m9-5sx">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="2GN-be-07D"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="2GN-be-07D">
+                            <connections>
+                                <action selector="save:" destination="0WS-ri-mTY" id="1Rh-pe-sTH"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="titleField" destination="jRL-rq-tIY" id="PbT-nu-Fps"/>
