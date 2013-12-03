@@ -25,6 +25,8 @@
 		C2E73478184D73DC007CDC68 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E73477184D73DC007CDC68 /* Main_iPhone.storyboard */; };
 		C2E7347A184D7C3F007CDC68 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E73479184D7C3F007CDC68 /* Main_iPad.storyboard */; };
 		C2E7347D184D8AEA007CDC68 /* MSENBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E7347C184D8AEA007CDC68 /* MSENBrowserViewController.m */; };
+		C2E73480184DF5FD007CDC68 /* MSENNotesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E7347F184DF5FD007CDC68 /* MSENNotesListViewController.m */; };
+		C2E73483184DF6BE007CDC68 /* MSENAddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E73482184DF6BE007CDC68 /* MSENAddNoteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		C2E73479184D7C3F007CDC68 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
 		C2E7347B184D8AEA007CDC68 /* MSENBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSENBrowserViewController.h; sourceTree = "<group>"; };
 		C2E7347C184D8AEA007CDC68 /* MSENBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSENBrowserViewController.m; sourceTree = "<group>"; };
+		C2E7347E184DF5FD007CDC68 /* MSENNotesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSENNotesListViewController.h; sourceTree = "<group>"; };
+		C2E7347F184DF5FD007CDC68 /* MSENNotesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSENNotesListViewController.m; sourceTree = "<group>"; };
+		C2E73481184DF6BE007CDC68 /* MSENAddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSENAddNoteViewController.h; sourceTree = "<group>"; };
+		C2E73482184DF6BE007CDC68 /* MSENAddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSENAddNoteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +134,12 @@
 				C2E73456184D72E5007CDC68 /* EveryNote.xcdatamodeld */,
 				C2E73477184D73DC007CDC68 /* Main_iPhone.storyboard */,
 				C2E73479184D7C3F007CDC68 /* Main_iPad.storyboard */,
+				C2E7347E184DF5FD007CDC68 /* MSENNotesListViewController.h */,
+				C2E7347F184DF5FD007CDC68 /* MSENNotesListViewController.m */,
 				C2E7347B184D8AEA007CDC68 /* MSENBrowserViewController.h */,
 				C2E7347C184D8AEA007CDC68 /* MSENBrowserViewController.m */,
+				C2E73481184DF6BE007CDC68 /* MSENAddNoteViewController.h */,
+				C2E73482184DF6BE007CDC68 /* MSENAddNoteViewController.m */,
 				C2E7344B184D72E5007CDC68 /* Supporting Files */,
 			);
 			path = EveryNote;
@@ -263,6 +273,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2E7347D184D8AEA007CDC68 /* MSENBrowserViewController.m in Sources */,
+				C2E73483184DF6BE007CDC68 /* MSENAddNoteViewController.m in Sources */,
+				C2E73480184DF5FD007CDC68 /* MSENNotesListViewController.m in Sources */,
 				C2E73451184D72E5007CDC68 /* main.m in Sources */,
 				C2E73458184D72E5007CDC68 /* EveryNote.xcdatamodeld in Sources */,
 				C2E73455184D72E5007CDC68 /* MSENAppDelegate.m in Sources */,
@@ -470,6 +482,7 @@
 				C2E73473184D72E6007CDC68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2E73474184D72E6007CDC68 /* Build configuration list for PBXNativeTarget "EveryNoteTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +491,7 @@
 				C2E73476184D72E6007CDC68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
